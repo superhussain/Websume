@@ -1,0 +1,125 @@
+.gigantic, .huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6
+  color: $heading
+  font-family: "munro_small"
+  font-weight: 100
+
+.gigantic
+  font-size: 110px
+  line-height: 1.09
+  letter-spacing: -2px
+
+.huge, h1
+  font-size: 68px
+  line-height: 1.05
+  letter-spacing: -1px
+
+.large, h2
+  font-size: 42px
+  line-height: 1.14
+
+.bigger, h3
+  font-size: 26px
+  line-height: 1.38
+
+.big, h4
+  font-size: 22px
+  line-height: 1.38
+
+.small, small
+  font-size: 10px
+  line-height: 1.2
+
+p, li
+  font-size: 1.2em
+  line-height: 1.5
+
+em
+  font-style: italic
+
+strong
+  font-weight: bold
+
+hr
+  border: solid #ddd
+  border-width: 1px 0 0
+  clear: both
+  margin: 10px 0 30px
+  height: 0
+
+ul
+  margin: 0
+  padding: 0
+
+@media (max-width: 600px)
+  h1
+    font-size: 38px
+  h2
+    font-size: 22px
+  h3
+    font-size: 20px
+  h4
+    font-size: 18px
+
+// Links
+
+a
+  color: $white
+  text-decoration: none
+  outline: 0
+  transition: color 150ms ease-in-out
+
+a:hover, a:focus
+  color: lighten($light-purple, 20%)
+
+
+
+// Selection colors (easy to forget)
+
+::selection
+  background: lighten($light-purple,20%)
+
+::-moz-selection
+  background: lighten($light-purple,20%)
+
+img::selection
+  background: transparent
+
+img::-moz-selection
+  background: transparent
+
+body
+  -webkit-tap-highlight-color: $white
+
+
+
+// Basic Styles
+
+html,
+body
+  min-height: 100vh
+  overflow-x: hidden
+
+body
+  font-family: 'Roboto', sans-serif
+  background-color: $purple
+  display: flex
+  section
+    padding: 2em
+    box-sizing: border-box
+
+// clearfix hack
+
+.clearfix:after
+  visibility: hidden
+  display: block
+  font-size: 0
+  content: " "
+  clear: both
+  height: 0
+.clearfix
+  display: inline-block
+* html .clearfix
+  height: 1%
+.clearfix
+  display: block
