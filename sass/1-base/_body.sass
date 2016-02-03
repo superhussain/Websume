@@ -3,6 +3,7 @@ h1, h2, h3, h4, h5, h6
   color: $heading
   font-family: "munro_small"
   font-weight: 100
+  margin: 0
 
 .gigantic
   font-size: 110px
@@ -41,25 +42,14 @@ strong
   font-weight: bold
 
 hr
-  border: solid #ddd
+  border: 1.5px solid $body
+  margin: 0.5em 0 1em
   border-width: 1px 0 0
   clear: both
-  margin: 10px 0 30px
   height: 0
-
 ul
   margin: 0
   padding: 0
-
-@media (max-width: 600px)
-  h1
-    font-size: 38px
-  h2
-    font-size: 22px
-  h3
-    font-size: 20px
-  h4
-    font-size: 18px
 
 // Links
 
@@ -92,6 +82,11 @@ body
   -webkit-tap-highlight-color: $white
 
 
+// Hide Scrollbar (webkit browsers only)
+::-webkit-scrollbar
+  display: none
+
+
 
 // Basic Styles
 
@@ -102,11 +97,18 @@ body
 
 body
   font-family: 'Roboto', sans-serif
-  background-color: $purple
+  background-color: $light-gray
   display: flex
+  overflow: hidden
   section
     padding: 2em
     box-sizing: border-box
+    overflow-y: auto
+@media (max-width: 860px)
+  body
+    display: block
+    overflow: auto
+    font-size: 18px
 
 // clearfix hack
 

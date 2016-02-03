@@ -1,1 +1,1 @@
-!function(n){jQuery(document).ready(function(n){})}(jQuery);
+!function(n){jQuery(document).ready(function(n){sectionScroll()}),n(window).resize(function(){sectionScroll()})}(jQuery);var sectionScroll=function(){section=$("section");var n=$(window).height();n>860&&section.css({height:n+"px"})};

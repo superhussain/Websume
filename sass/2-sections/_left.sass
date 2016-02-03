@@ -1,9 +1,11 @@
 section.left
   background-color: $purple
   border-right: 2em solid $border
-  position: fixed
-  height: 100vh
+  // position: absolute
+  min-height: 100vh
   width: 420px
+  min-width: 420px
+  color: $white
   h1
     font-family: "Press Start 2P"
     text-align: right
@@ -14,7 +16,74 @@ section.left
     font-size: 1.5em
     color: $light-purple
     text-align: center
+    margin: 0.4em 0
   .contact
     a
       display: block
-      line-height: 1.5
+      line-height: 1.875
+      color: $white
+      transition: all 150ms ease-in-out
+      &:hover
+        color: $light-purple
+      img
+        width: 1em
+        margin-right: 0.75em
+        vertical-align: middle
+  .education, .skills, .about
+    position: relative
+    z-index: 3
+    text-align: right
+    margin-bottom: 1.5em
+    h2
+      color: $white
+    hr
+      border-color: $white
+    p
+      color: $purp-2
+      margin: 0
+      font-size: 1em
+      font-weight: 300
+    strong
+      color: $purp-1
+      font-family: "Roboto Slab"
+      font-size: 1.2em
+      line-height: 2
+  .skills
+    strong
+      color: $white
+    .excellent
+      color: $purp-1
+      font-weight: 700
+    .good
+      color: $purp-2
+      font-weight: 400
+    .okay
+      color: $purp-3
+      font-weight: 300
+  .about
+    p
+      color: $purp-1
+      padding-left: 105px
+      b
+        font-weight: 700
+      b.burn
+        color: $red
+    p.lead
+      padding-left: 0px
+  .huss-back
+    background-image: url(../img/hussain.png)
+    background-size: contain
+    background-repeat: no-repeat
+    height: 220px
+    transform: translate(-50px,-220px)
+    margin-bottom: -300px
+
+@media (max-width: 860px)
+  section.left
+    width: 100%
+    min-height: auto
+    border-right: none
+    border-bottom: 2em solid $border
+    .about
+      p
+        padding-left: 150px

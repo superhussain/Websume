@@ -1,3 +1,30 @@
 section.right
   background-color: $light-gray
-  padding-left: calc(420px + 2em)
+  // padding-left: calc(420px + 2em)
+  .list
+    margin-bottom: 2em
+    hr
+      border: 1.5px solid $heading
+      margin: 0.5em 0 1em
+    p
+      color: $heading
+      font-family: "Roboto Slab"
+      font-weight: 300
+      margin: 0.5em 0
+      a
+        color: $border
+        font-weight: 900
+        transition: all 150ms ease-in-out
+        &:hover
+          color: lighten($border, 20%)
+    ul
+      padding: 0px 0px 0px 1em
+      list-style-image: url('../img/list-icon.png')
+      li
+        color: $body
+        font-size: 1em
+        font-weight: 300
+        font-family: "Roboto"
+@media (max-width: 860px)
+  section.right
+    font-size: 16px
