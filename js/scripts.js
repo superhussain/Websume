@@ -4,7 +4,7 @@
   });
   $(window).resize(function() {
     sectionScroll();
-  })
+  });
 })(jQuery);
 
 var sectionScroll = function() {
