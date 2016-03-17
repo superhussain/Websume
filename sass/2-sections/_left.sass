@@ -18,6 +18,7 @@ section.left
     text-align: center
     margin: 0.4em 0
   .contact
+    margin-bottom: 2em
     a
       font-family: "Roboto Slab"
       display: block
@@ -30,11 +31,11 @@ section.left
         width: 1em
         margin-right: 0.75em
         vertical-align: middle
-  .education, .skills, .about
+  .skills, .about
     position: relative
     z-index: 3
     text-align: right
-    margin-bottom: 1.5em
+    margin-bottom: 2em
     h2
       color: $white
     hr
@@ -65,18 +66,35 @@ section.left
     p
       color: $purp-1
       padding-left: 105px
+      margin-bottom: 0.5em
+      a
+        font-weight: 700
+        color: $purp-2
+        transition: all 150ms ease-in-out
+        &:hover
+          color: $purp-3
       b
         font-weight: 700
       b.burn
         color: $red
     p.lead
       padding-left: 0px
+    hr.quote-divider
+      width: 100px
+      float: right
+      border-color: $purp-3
+    .quote
+      margin: 2.2em 0
+      p
+        color: $purp-2
+      p.author
+        font-weight: 400
   .huss-back
     background-image: url(../img/hussain.png)
     background-size: contain
     background-repeat: no-repeat
     height: 220px
-    transform: translate(-50px,-220px)
+    transform: translate(-50px,-240px)
     margin-bottom: -300px
 
 @media (max-width: 860px)

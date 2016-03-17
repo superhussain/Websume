@@ -2,7 +2,7 @@ section.right
   background-color: $light-gray
   // padding-left: calc(420px + 2em)
   .list
-    margin-bottom: 2em
+    margin-bottom: 1.25em
     hr
       border: 1.5px solid $heading
       margin: 0.5em 0 1em
@@ -25,6 +25,12 @@ section.right
         font-size: 1em
         font-weight: 300
         font-family: "Roboto"
+        a
+          color: $border
+          font-weight: 400
+          transition: all 150ms ease-in-out
+          &:hover
+            color: lighten($border, 20%)
 @media (max-width: 860px)
   section.right
     font-size: 16px
