@@ -1,8 +1,8 @@
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6
   color: $heading
-  font-family: "munro_small"
-  font-weight: 100
+  font-family: "uni0553", monospace
+  font-weight: 900
   margin: 0
 
 .gigantic
@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6
   letter-spacing: -1px
 
 .large, h2
-  font-size: 42px
+  font-size: 32px
   line-height: 1.14
 
 .bigger, h3
@@ -89,6 +89,13 @@ body
 
 
 // Basic Styles
+
+*
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
+  text-rendering: geometricPrecision
+  -moz-font-smoothing: antialiased
 
 html,
 body

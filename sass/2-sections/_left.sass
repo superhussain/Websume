@@ -7,20 +7,21 @@ section.left
   min-width: 420px
   color: $white
   h1
-    font-family: "Press Start 2P"
+    font-family: "Press Start 2P", monospace
     text-align: right
     color: $white
     font-size: 3em
     text-transform: uppercase
   h3.tagline
-    font-size: 1.5em
+    font-size: 1em
     color: $light-purple
     text-align: center
     margin: 0.4em 0
+    text-transform: uppercase
   .contact
     margin-bottom: 2em
     a
-      font-family: "Roboto Slab"
+      font-family: "Roboto Slab", sans-serif
       display: block
       line-height: 1.875
       color: $white
@@ -47,7 +48,7 @@ section.left
       font-weight: 300
     strong
       color: $purp-1
-      font-family: "Roboto Slab"
+      font-family: "Roboto Slab", sans-serif
       font-size: 1.2em
       line-height: 2
   .skills
@@ -58,10 +59,10 @@ section.left
       font-weight: 700
     .good
       color: $purp-2
-      font-weight: 400
+      font-weight: 500
     .okay
       color: $purp-3
-      font-weight: 300
+      font-weight: 400
   .about
     p
       color: $purp-1
@@ -93,8 +94,8 @@ section.left
     background-image: url(../img/hussain.png)
     background-size: contain
     background-repeat: no-repeat
-    height: 220px
-    transform: translate(-50px,-240px)
+    height: 190px
+    transform: translate(-50px,-190px)
     margin-bottom: -300px
 
 @media (max-width: 860px)
@@ -103,6 +104,8 @@ section.left
     min-height: auto
     border-right: none
     border-bottom: 2em solid $border
+    overflow: hidden
+    padding-bottom: 4em
     .about
       p
         padding-left: 150px
