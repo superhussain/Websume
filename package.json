@@ -9,7 +9,7 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-imagemin": "^2.3.0",
     "gulp-jshint": "^1.11.2",
     "gulp-livereload": "^3.8.1",
